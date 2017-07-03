@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="PersonBean" class="DI.PersonDetails" scope="prototype" >
+     <property name="name" value="ABC" />
+     <property name="post" value="Level-1"/> 
+     <property name="num" value="1234"/> 
+     <property name="city" value="ASDFG"/>
+     </bean>
+     
+    <bean id="JobBean" class="DI.JobDetails" >
+     <property name="jobID" value="21-2B" />
+     <property name="post" value="Level-1"/> 
+     <property name="salary" value="10000"/> 
+     <property name="city" value="ASDFG"/>
+     </bean>
+</beans>

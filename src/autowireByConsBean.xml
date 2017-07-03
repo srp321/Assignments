@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- This is for ref -->
+	<!-- <bean id="PersonBean" class="autowireByConstructor.Person" >
+     <constructor-arg value="111" />
+     <constructor-arg value="ABC"/> 
+     <constructor-arg ref="OwnBean"/>
+     </bean> -->
+     
+     <!-- This is for autowire: byConstructor -->
+     <bean id="PersonBean" class="autowireByConstructor.Person" autowire="constructor">
+     <constructor-arg index="0" value="111" />
+     <constructor-arg index="1" value="ABC"/>  
+     </bean>
+     
+    <bean id="OwnBean" class="autowireByConstructor.ownDetail" >
+     <constructor-arg value="2000" />
+     <constructor-arg value="4" />
+     </bean>
+</beans>
+
