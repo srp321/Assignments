@@ -5,26 +5,32 @@ public class Person {
 	String name;
 	ownDetail ownDetail;
 
-	public void setId(int id){
-		this.id=id;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public int getId(){
+
+	public int getId() {
 		return id;
 	}
-	public void setName(String name){
-		this.name=name;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getName(){
+
+	public String getName() {
 		return name;
 	}
-	public void setOwnDetail(ownDetail ownDetail){
-		this.ownDetail=ownDetail;
+
+	public void setOwnDetail(ownDetail ownDetail) {
+		this.ownDetail = ownDetail;
 	}
-	public ownDetail getOwnDetail(){
+
+	public ownDetail getOwnDetail() {
 		return ownDetail;
 	}
-@Override
-public String toString() {
-    return "ID: "+id+", Name: "+name+"\nSal: "+ownDetail.sal+", Exp: "+ownDetail.exp;
+
+	@Override
+	public String toString() {
+		return "ID: " + id + ", Name: " + name + "\nSal: " + ownDetail.sal + ", Exp: " + ownDetail.exp;
+	}
 }
-} 
